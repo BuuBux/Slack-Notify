@@ -79,7 +79,7 @@ setInterval(() => {
 
 	if (accHour > 6) {
 
-		const shops = ['combat'];
+		const shops = ['combat', 'xkom', 'carinet', 'morele'];
 
 		Promise.all(shops.map((name) => createPromisesForShops(name)))
 			.then((arrayOfPromotions) => {
